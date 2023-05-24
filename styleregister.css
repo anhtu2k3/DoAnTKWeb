@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600&family=Comfortaa:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    font-family: 'Chakra Petch';
+}
+#wrapper {
+    /* Kích thước màn hình là 1280 x 720 */
+    width: 100%;
+    height: 16.5vh;
+    font-family: 'Roboto', sans-serif;
+    color: hsl(252, 30%, 17%);
+    overflow: hidden ; 
+}
+.container {
+    width: 80%;
+    margin: 0px auto;
+}
+#header{
+    width: 100%;
+    background-color: hsl(252, 30%, 100%);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+#header .container{
+    display: flex;
+    align-items:center ;
+    justify-content:space-between;
+}
+#header .logo {
+    width: 15%;
+    float: left;
+}
+#header .logo img{
+    width: 100%;
+}
+.search-bar{
+    background-color: hsl(252, 30%, 95%);
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+}
+.search-bar input{
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    background-color: hsl(252, 30%, 95%);
+}
+.button{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.button a {
+    text-decoration: none;
+}
+.btn {
+    display: inline-block;
+    padding: 00.6rem 2rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    cursor:pointer;
+    color: white;
+    background-color:crimson;
+    transition: all 300ms ease;
+}
+.btn:hover {
+    opacity: 0.8;
+    background-color:black;
+}
+.link{
+    cursor: pointer;
+
+}
+.link:hover {
+    text-decoration: underline;
+}
+#menu{
+  width: 100%;
+  margin:auto;
+  background-color: rgb(34, 35, 37);
+}
+#menu .menu-area{
+}
+#menu .menu-area ul{
+  list-style: none;
+  position: relative;
+  text-transform: uppercase;
+}
+#menu .menu-area ul li{
+  display: inline-block;
+
+}
+#menu .menu-area ul li a{
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 12px 15px;
+}
+#menu .menu-area ul li:hover{
+  background:crimson;
+}
+#menu .menu-area ul li:hover > ul{
+  display: block;
+}
+#menu .menu-area ul ul{
+  display: none;
+  position: absolute;
+  top: 100%;
+  background:#24262b
+}
+#menu .menu-area ul ul li{
+  width: 200px;
+  position: relative;
+  display: block;
+  border-bottom: 1px solid #ffffff;
+}
+#menu .menu-area ul ul ul{
+  position: absolute; 
+  left: 100%;
+  top: 0;
+}
+  #main{
+    overflow: hidden;
+    margin: 0px auto;
+    max-width: 80%;
+    margin-top: 20px;
+    height: 100vh;
+  }
+  #main .main-right{
+    width: 40%;
+    background: #fff;
+    margin: 20px auto;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    padding: 30px;
+    float:right;
+    border: 2px solid crimson;
+  }
+  
+  #main .main-right .title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color:crimson;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  #main .main-right .form{
+    width: 100%;
+    height: 550px;
+    float:left;
+    padding-left: 10px;
+    box-sizing: border-box;
+  }
+  #main .main-right .form .social-icons{
+    margin: 20px auto;
+    text-align: center;
+  }
+  #main .main-right .form .social-icons i{
+    font-size: 40px;
+    padding: 20px;
+    color:crimson;
+  }
+  #main .main-right .form .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #main .main-right .form .inputfield label{
+     width: 200px;
+     margin-right: 10px;
+    font-size: 14px;
+  }
+  
+  #main .main-right .form .inputfield .input,
+  #main .main-right .form .inputfield .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  #main .main-right .form .inputfield .textarea{
+    width: 100%;
+    height: 125px;
+    resize: none;
+  }
+  
+  #main .main-right .form .inputfield .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+  }
+  
+  #main .main-right .form .inputfield .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+  }
+  
+  #main .main-right .form .inputfield .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+  }
+  
+  
+  #main .main-right .form .inputfield .input:focus,
+  #main .main-right .form .inputfield .textarea:focus,
+  #main .main-right .form .inputfield .custom_select select:focus{
+    border: 1px solid #fec107;
+  }
+  
+  #main .main-right .form .inputfield p{
+     font-size: 14px;
+  }
+  #main .main-right .form .inputfield .check{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  #main .main-right .form .inputfield .check input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  #main .main-right .form .inputfield .check .checkmark{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fec107;
+    display: block;
+    position: relative;
+  }
+  #main .main-right .form .inputfield .check .checkmark:before{
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+  }
+  #main .main-right .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark{
+    background:crimson;
+  }
+  
+  #main .main-right .form .inputfield .check input[type="checkbox"]:checked ~ .checkmark:before{
+    display: block;
+  }
+  
+  #main .main-right .form .inputfield .btn{
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px; 
+    border: 0px;
+    background:crimson;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+  }
+  
+  #main .main-right .form .inputfield .btn:hover{
+    background: #000000;
+  }
+  
+  #main .main-right .form .inputfield:last-child{
+    margin-bottom: 0;
+  }
+  #main .main-left{
+    width: 60%;
+    float:left;
+    padding-left: 10px;
+    box-sizing: border-box;
+    }
+#main .main-left .banner{
+    position: relative;
+}
+#main .main-left .banner img{
+    margin-top: 20px;
+    width: 100%;
+    height: 685px;
+}
+
+  #footer{
+	background-color: #24262b;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+#footer .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+#footer .row ul{
+	list-style: none;
+}
+#footer .footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+#footer .footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+#footer .footer-col p{
+  width: 50%;
+  color: #fff;
+}
+#footer .footer-col h4:before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+#footer .footer-col ul li{
+	margin-bottom: 10px;
+}
+#footer .footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+#footer .footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+#footer .footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+#footer .footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+.footer-top{
+  margin-top: 40px;
+  text-align: center;
+  color: #fff;
+}
